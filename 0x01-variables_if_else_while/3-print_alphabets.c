@@ -10,12 +10,12 @@ int main(void)
 		char CH;
 
 			for (ch = 'a'; ch <= 'z'; ++ch){
-			putchar("%c", ch);
+			printf("%c", ch);
   		}
 			for (CH = 'A'; CH <= 'Z'; ++CH){
-			putchar("%c", CH);}
+			printf("%c", CH);}
 
-		putchar("\n");
+		printf("\n");
 
 		return (0);
 }
