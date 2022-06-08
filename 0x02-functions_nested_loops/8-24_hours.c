@@ -1,32 +1,28 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- *  * jack_bauer - Prints the minutes of a day
- *   *
- *    * Return: no return
- *     */
+ *jack_bauer - prints the minutes of a day
+ *Description: the minutes of a day from 00:00 to 23:59.
+ */
+
 void jack_bauer(void)
 {
-	int a, b, c, d;
+	int hours = 0;
+	int min = 0;
 
-		for (a = 48; a <= 50; a++)
-				{
-		for (b = 48; b <= 57; b++)
-				{
-		for (c = 48; c <= 53; c++)
-				{
-																			for (d = 48; d <= 57; d++)
-																					{
-																			if (a >= 50 && b >= 52)
-																																				break;
-																																					_putchar(a);
-																																					_putchar(b);
-																																					_putchar(58);
-																																																						_putchar(c);
-																																					_putchar(d);
-																																					_putchar('\n');
-																																						}
-																					}
-				}
-				}
+	while (hours < 24)
+						{
+	while (min < 60)
+		{
+																		_putchar('0' + (hours / 10));
+																		_putchar('0' + (hours % 10));
+																		_putchar(':');
+																		_putchar('0' + (min / 10));
+																		_putchar('0' + (min % 10));
+																		_putchar('\n');
+																																			min++;
+																																				}
+	min = 0;
+	hours++;
+		}
 }
